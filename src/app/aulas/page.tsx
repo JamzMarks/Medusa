@@ -3,7 +3,7 @@ import Card from './components/card'
 
 export default function Aulas(){
     return(
-        <main>
+        <div>
             <HeadTitle title="Nossas Aulas" paragraph='Conheça nossas modalidades'></HeadTitle>
             
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-2 gap-x-8 gap-y-4">
@@ -25,6 +25,6 @@ export default function Aulas(){
                 />
                 
             </div>
-        </main>
+        </div>
     )
 }

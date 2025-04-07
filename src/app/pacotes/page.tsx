@@ -20,7 +20,7 @@ export default function Pacotes(){
         }
     ]
     return(
-        <main className="text-left grid gap-15 mt-8 mb-8">
+        <div className="text-left grid gap-15 mt-8 mb-8">
             <div>
                 <h1 className="mb-4 text-2xl font-extrabold text-gray-900  md:text-5xl lg:text-4xl"><span className="text-pink-800">Pacotes</span> de Aulas</h1>
                 <p className="text-lg font-normal text-neutral-700 lg:text-xl">
@@ -40,6 +40,6 @@ export default function Pacotes(){
                 
                 </div>
             </div>
-        </main>
+        </div>
     )
 }

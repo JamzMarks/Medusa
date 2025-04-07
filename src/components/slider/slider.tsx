@@ -1,32 +1,29 @@
 "use client"
 import Image from "next/image";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 export default function Slider(){
-    const [currentIndex, setCurrentIndex] = useState(0);
+    // const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
     'https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU',
     'https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4',
     'https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ'
   ];
 
-  // Função para ir para o próximo slide
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+//   const nextSlide = () => {
+//     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+//   };
 
-  // Função para ir para o slide anterior
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+//   const prevSlide = () => {
+//     setCurrentIndex((prevIndex) =>
+//       prevIndex === 0 ? images.length - 1 : prevIndex - 1
+//     );
+//   };
 
-  // Auto slide a cada 5 segundos
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval); // Limpa o intervalo quando o componente é desmontado
-  }, []);
+//   useEffect(() => {
+//     const interval = setInterval(nextSlide, 5000);
+//     return () => clearInterval(interval); // Limpa o intervalo quando o componente é desmontado
+//   }, []);
 
     return(
         
