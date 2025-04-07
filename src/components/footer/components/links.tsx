@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Links() {
   return (
     <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
@@ -7,44 +9,44 @@ export default function Links() {
           </p>
           <ul className="mt-6 space-y-4 text-sm">
             <li>
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
               >
                 Sobre
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="#"
+              <Link
+                href="/professoras"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
               >
                 Professoras
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="#"
+              <Link
+                href="/aulas"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
               >
                 Aulas
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="#"
+              <Link
+                href="/pacotes"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
               >
                 Pacotes
-              </a>
+              </Link>
             </li>
 
             <li>
               <a
-                href="#"
+                href="/blog"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
               >
                 Blog
