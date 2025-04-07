@@ -1,8 +1,16 @@
-import Image from "next/image";
+import Footer from "@/components/footer/footer";
+import Navigation from "@/components/navigation/navigation";
+import Slider from "@/components/slider/slider";
+import AulasPage from "@/pages/aulas/aulas";
+// import Image from "next/image";
+import PacotesPage from "@/pages/pacotes/pacotesPage";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <>
+      <Navigation></Navigation>
+      <Slider></Slider>
+    {/* <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -98,6 +106,13 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+      
+    </div> */}
+    <div className="flex flex-wrap items-center mg-auto gap-3 justify-center">
+      <AulasPage></AulasPage>
+      <PacotesPage></PacotesPage>
     </div>
+    <Footer></Footer>
+    </>
   );
 }
