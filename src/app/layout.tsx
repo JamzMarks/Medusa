@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <Navigation></Navigation>
         <Hero></Hero>
-        <main className="container mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <main className="mt-8 mb-8">
           {children}
         </main>
         <Footer></Footer>

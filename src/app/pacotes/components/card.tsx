@@ -1,4 +1,4 @@
-
+import { SiBytedance } from "react-icons/si";
 export interface PacoteProps {
   qtd: number,
   price: number,
@@ -10,8 +10,8 @@ export default function Card(pacote: PacoteProps){
     return(
         <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs">
           <div className="p-6 sm:px-8">
-            <h2 className="text-lg font-medium text-gray-900">
-              {pacote.qtd > 1 ? `${pacote.qtd} aulas` : "Aula avulsa"}
+            <h2 className="flex gap-2 content-center items-center text-lg font-medium text-gray-900">
+              <span className="text-pink-700"><SiBytedance></SiBytedance></span>{pacote.qtd > 1 ? `${pacote.qtd} aulas` : "Aula avulsa"}
             
               <span className="sr-only">Plan</span>
             </h2>

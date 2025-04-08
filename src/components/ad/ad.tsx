@@ -9,6 +9,9 @@ export default function Ad() {
           remarcação.
         </span>
       </p>
+      <button className="bg-black text-white">
+        Contato
+      </button>
     </section>
   );
 }

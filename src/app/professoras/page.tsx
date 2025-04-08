@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Professoras(){
     return(
-            <section>
+            <section className="container mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
 
             <article>
                 <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
